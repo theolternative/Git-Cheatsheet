@@ -6,13 +6,13 @@ Workflow is as follows:
 - You modify files in your wokring tree
 - You mark files as staged ready to be committed
 - You commit staged files
-- 
+
 You can create **branches** in order to test experimental features or developt hot fixes:
 - You create a new branch and switch to it
 - You commit changes
 - You switch to master branch
 - You merge changes to master branch
-- 
+ 
 Git checks *last common branch* in order to merge changes. Suppose you create branch `NewFeatures` make changes and commit but don't merge; then you create branch `HotFix` make changes, commit and merge to `master` branch. Now if you try to merge `NewFeatures` branch to `master`, there are two cases:
 1) Merge **succeeds** since no files changed in `HotFix` branch have been changed in `NewFeatures` branch (no conflics).
 2) Merge **fails** since one or more files changed in `HotFix` branch have also been changed in `NewFeatures` branch. Git can't determine which version is worth keeping.
