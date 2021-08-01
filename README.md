@@ -6,3 +6,7 @@ Configuration files can be **global**, **user-specific**, **repository-specific*
 `$ git config --list --show-origin`
 
 ### Basic settings
+```
+git config --global user.name "Theo Reds"
+git config --global user.name "theo@example.com"
+```
